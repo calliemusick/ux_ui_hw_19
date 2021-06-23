@@ -2,10 +2,13 @@
 <html>
 
 <head>
-     <title>Street Medicine Kansas City Header/Hero/Footer</title>
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Street Medicine Kansas City Header/Hero/Footer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <!-- My UX Skills section coded using CSS flex -->
@@ -18,7 +21,14 @@
             <nav class="navContainer">
                 <ul class="topNavLinks">
                     <li><a href="OurWork.html">Our Work</a></li>
-                    <li class="getInvolvedLi"><a href="getinvolved.asp">Get Involved</a><img src="images/Header-Down Arrow Icon.png" id="navArrow"></li>
+                    <li class="getInvolvedLi"> 
+                        <div class="dropdown">
+                            <a href="getinvolved.asp">Get Involved</a><img src="images/Header-Down Arrow Icon.png" id="navArrow">
+                                <div id="myDropdown" class="dropdown-content">
+                                <a href="volunteer.asp">Volunteer with us</a>
+                                <a href="partner.asp">Partner wth us</a>
+                                </div>
+                      </div></li>
                     <li><a href="events.asp">Events</a></li>
                     <li><a href="news.asp">News</a></li>
                     <li><a href="aboutus.asp">About Us</a></li>
@@ -31,6 +41,9 @@
             <button type="button" id="searchButton"><img src="images/Header-Search Icon.png"><br>Search</button>
         </div>
     </header>
+
+   
+
 
     <section class="heroContainer">
         <img src="images/Hero-Header-Image.png" alt="Two people sitting facing eachother">
@@ -131,5 +144,7 @@
 
 </section>
 </body>
+
+<script src="js/index.js"></script>
 
 </html>

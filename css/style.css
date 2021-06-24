@@ -74,16 +74,17 @@ p {
 .theProblemHeader {
     display: flex;
     flex-flow: column;
+    padding: 30px;
 }
 
 .theProblemHeader img {
-    width: 600px;
+    width: 800px;
     margin-left: 80px;
     justify-content: center;
 }
 
 .theProblemHeader h3 {
-    margin-top: -120px
+    margin-top: -150px
 }
 
 .theProblemHeader p {
@@ -99,11 +100,14 @@ p {
 
 .stats p {
     font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .stats div {
     width: 23%;
-    padding: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .stats img {
@@ -121,13 +125,17 @@ p {
 }
 
 .theProblemCTA p {
-    line-height: 40px;
+    line-height: 35px;
+    font-size: 23px;
+    font-weight: bold;
 }
 
-.theProblemCTA div > img {
-    width: 50px;
-    margin-left: -875px;
-    margin-bottom: -45px;
+.theProblemCTA img {
+    width: 3%;
+    padding: 10px;
+    margin-left: -185px;
+    margin-bottom: -22px;
+    position: relative;
 }
 
 header img {
@@ -200,9 +208,6 @@ nav li:hover {
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
 
-
-
-
 #searchButton {
     background-color: #F2ECE4;
     border: none;
@@ -213,7 +218,7 @@ nav li:hover {
 .heroContainer {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
 }
 
 .heroContainer img {
@@ -221,32 +226,28 @@ nav li:hover {
 }
 
 .heroContent {
-    display: flex;
     flex-direction: column;
-    background-color: #C1D8D7;
-    width: 475px;
-    height: 312px;
-    margin-left: -250px;
-    padding-left: 50px;
-    padding-right: 50px;
+    z-index: 2;
 }
 
 .heroContent img {
-    height: 300px;
-    width: 300px;
-    margin-top: -150px;
-    margin-left: 220px;
+    width: 100%;
+    margin-left: -120px;
+    margin-bottom: -60px;
+    height: 330px;
+    width: 552px;
 }
 
 .heroContent h1 {
     margin-top: -75px;
 }
 
-
 .theProblem {
     background-color: #2A666C;
     color: white;
     text-align: center;
+    z-index: 1;
+    margin-top: -5px;
 }
 
 a {
@@ -280,6 +281,24 @@ header li {
     font-variant-caps: all-small-caps;
  }
 
+.ourWorkButton {
+    border: none;
+    top: 15px;
+    background-color: #272523;
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: 'Mulish', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    letter-spacing: 5px;
+    font-variant-caps: all-small-caps;
+}
+
  .blackButton:hover { 
      background-color: #2A666C;
      color: white;
@@ -300,29 +319,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.whiteButton {
-    display: inherit;
-    border: none;
-    background-color: white;
-    width: 160px;
-    height: 50px;
-    border-radius: 5px;
-    font-family: 'Mulish', sans-serif;
-    color: black;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 20px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    letter-spacing: 5px;
-    font-variant-caps: all-small-caps;
-}
-
-.whiteButton:hover {
-    background-color: #33808F;
-    color: white;
 }
 
 .socialSection {
@@ -352,7 +348,7 @@ footer {
     width: 60px;
     height: 50px;
     font-family: 'Mulish', sans-serif;
-    color: black;
+    color: #272523;
     text-align: center;
     font-size: 12px;
     font-weight: normal;
@@ -389,10 +385,10 @@ footer {
 }
 
 hr {
-    color: black;
+    color: #272523;
     border: none;
     height: .25px;
-    background-color:#000000; 
+    background-color:#272523; 
     border-color:transparent;
     width: 78%;
     margin-top: 25px;
